@@ -62,11 +62,11 @@
 								</ul>
 							</div> -->
 							<ul class="nav navbar-nav">
-                <li class="hvr-bounce-to-bottom"><a href="/">Home</a></li>
+                <li class="hvr-bounce-to-bottom"><a href="/doctor">Home</a></li>
 								<li class="active"><a href="/doctor/counseling">Counseling</a></li>
                 <li class="hvr-bounce-to-bottom"><a href="/doctor/report">Report</a></li>
+                <li><a href="/doctor/profile" class="hvr-bounce-to-bottom">Profile</a></li>
 							</ul>
-              <li><a href="/doctor/profile" class="hvr-bounce-to-bottom">Profile</a></li>
 							<div class="clearfix"> </div>
 						</nav>
 					</div>
@@ -81,7 +81,7 @@
       <div class="agileits_banner_bottom_grids">
         <div class="col-md-12 agileits_banner_bottom_grid_l">
           <h4>Counseling Form</h4>
-          <p><i>You're allowed to write down your suggestion and request about education system at hospital in this form.  </i></p>
+          <p><i>In this form, you're allowed to write down your suggestion and request about education system at hospital.  </i></p>
           <form>
             <div class="form-group">
               <!-- <label for="exampleFormControlTextarea1">Example textarea</label> -->

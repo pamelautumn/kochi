@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>KOCHI Digital Learning Resource</title>
+<title>KOCHI Digital Learning Resource</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -9,23 +9,16 @@
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
-<link href="{{ URL::asset('css/bootstrap.min.css') }}" rel="stylesheet" />
-
-<link href="{{ URL::asset('css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all" />
-<link href="{{ URL::asset('css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
-<link href="{{ URL::asset('css/imagehover.css') }}" rel="stylesheet" type="text/css" media="all" />
-
-<link type="text/css" rel="stylesheet" href="{{ URL::asset('css/cm-overlay.css') }}">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- js -->
-
-<script type="text/javascript" src="{{ URL::asset('js/jquery-2.1.4.min.js') }}"></script>
-
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 <!-- //js -->
 <link href='//fonts.googleapis.com/css?family=Capriola' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 <!-- start-smoth-scrolling -->
-<script type="text/javascript" src="{{ URL::asset('js/move-top.js') }}"></script>
-<script type="text/javascript" src="{{ URL::asset('js/easing.js') }}"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){
@@ -35,6 +28,13 @@
 	});
 </script>
 <!-- start-smoth-scrolling -->
+<!-- animation-effect -->
+<link href="css/animate.min.css" rel="stylesheet">
+<script src="js/wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
+<!-- //animation-effect -->
 </head>
 
 <body>
@@ -64,10 +64,10 @@
 								</ul>
 							</div> -->
 							<ul class="nav navbar-nav">
-								<li class="active"><a href="/doctor">Home</a></li>
-                <li><a href="/doctor/counseling" class="hvr-bounce-to-bottom">Counseling</a></li>
-								<li><a href="/doctor/report" class="hvr-bounce-to-bottom">Report</a></li>
-                <li><a href="/doctor/profile" class="hvr-bounce-to-bottom">Profile</a></li>
+								<li class="active"><a href="/teacher">Home</a></li>
+								<li><a href="/teacher/counseling" class="hvr-bounce-to-bottom">Counseling</a></li>
+								<li><a href="/teacher/report" class="hvr-bounce-to-bottom">Report</a></li>
+                <li><a href="/teacher/profile" class="hvr-bounce-to-bottom">Profile</a></li>
 							</ul>
 							<div class="clearfix"> </div>
 						</nav>
@@ -96,7 +96,7 @@
 		<div class="container">
 			<h3 class="head">A<span>brief description <i>about</i> KOCHI</span></h3>
 			<div class="agileits_banner_bottom_grids">
-        <div class="col-md-6 agileits_banner_bottom_grid_l">
+				<div class="col-md-6 agileits_banner_bottom_grid_l">
 					<h4>KOCHI Digital Learning Resource</h4>
 					<p>KOCHI is Digital Learning Resource for child patient in hospital. This research conduct in Saga University Hospital, Saga, Japan.
 
@@ -119,7 +119,7 @@
 	<div class="banner-bottom1">
 		<div class="col-md-6 agile_banner_bottom1_left">
 		</div>
-    <div class="col-md-6 agile_banner_bottom1_right">
+		<div class="col-md-6 agile_banner_bottom1_right">
 			<h4>What's Inside</h4><br>
 
 			<ul>
@@ -134,20 +134,22 @@
 	</div>
 <!-- //banner-bottom1 -->
 
+
 <!-- footer -->
 	<div class="footer">
 		<div class="container">
-      <div class="col-md-4 w3l_footer_grid">
+			<div class="col-md-4 w3l_footer_grid">
 				<h2><a href="index.html"><span>K</span>OCHI</a></h2>
 				<p>KOCHI developed by Pamela P. Maldini, an Exchange Student in Saga University</p>
 			</div>
 
 			<div class="col-md-2 w3l_footer_grid">
 				<!-- <h3>Navigation</h3>
-        <ul class="w3_address">
-					<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Saga University<span>Saga, Japan.</span></li>
-					<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:pamela.maldini3122@gmail.com">info@in.com</a></li>
-					<!-- <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 567</li> -->
+				<ul class="agileinfo_footer_grid_nav">
+					<li><a href="services.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Services</a></li>
+					<li><a href="portfolio.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Portfolio</a></li>
+					<li><a href="short-codes.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Short Codes</a></li>
+					<li><a href="mail.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Mail Us</a></li>
 				</ul> -->
 			</div>
 			<div class="col-md-2 w3l_footer_grid">
@@ -162,7 +164,7 @@
 
 			<div class="col-md-4 w3l_footer_grid">
 				<h3>Address</h3>
-        <ul class="w3_address">
+				<ul class="w3_address">
 					<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Saga University<span>Saga, Japan.</span></li>
 					<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:pamela.maldini3122@gmail.com">info@in.com</a></li>
 					<!-- <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 567</li> -->

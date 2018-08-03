@@ -64,7 +64,7 @@
 								</ul>
 							</div> -->
 							<ul class="nav navbar-nav">
-								<li class="active"><a href="/">Home</a></li>
+								<li class="active"><a href="/teacher">Home</a></li>
 								<li><a href="/login" class="hvr-bounce-to-bottom">Login</a></li>
 							</ul>
 							<div class="clearfix"> </div>

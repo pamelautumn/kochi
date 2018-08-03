@@ -38,12 +38,30 @@ Route::get('/child/material/intermezzo', function () {
 Route::get('/parents', function () {
   return view('parent/parents');
 });
+Route::get('/parents/profile', function () {
+  return view('parent/profile');
+});
 Route::get('/parents/counseling', function () {
   return view('parent/counseling');
+});
+Route::get('/teacher', function () {
+  return view('teacher/teacher');
+});
+Route::get('/teacher/counseling', function () {
+  return view('teacher/counseling');
+});
+Route::get('/teacher/report', function () {
+  return view('teacher/report');
+});
+Route::get('/teacher/profile', function () {
+  return view('teacher/profile');
 });
 Route::get('/doctor', function () {
   return view('doctor/doctor');
 });
 Route::get('/doctor/counseling', function () {
   return view('doctor/doctor-counseling');
+});
+Route::get('/doctor/profile', function () {
+  return view('doctor/profile');
 });

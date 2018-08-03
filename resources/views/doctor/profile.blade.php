@@ -16,7 +16,7 @@
 
           <div class="panel panel-info">
             <div class="panel-heading">
-              <h3 class="panel-title">Patient Profile</h3>
+              <h3 class="panel-title">Doctor Profile</h3>
             </div>
             <div class="panel-body">
               <div class="row">
@@ -38,40 +38,19 @@
                   <table class="table table-user-information">
                     <tbody>
                       <tr>
-                        <td>ID:</td>
+                        <td>Doctor Name:</td>
                         <!-- <td>Programming</td> -->
                       </tr>
                       <tr>
-                        <td>Patient Name:</td>
+                        <td>Specialty:</td>
                         <!-- <td>Programming</td> -->
                       </tr>
                       <tr>
-                        <td>Date of birth:</td>
-                        <!-- <td>Programming</td> -->
-                      </tr>
-                      <tr>
-                        <td>Parent's name:</td>
+                        <td>Department:</td>
                         <!-- <td>06/23/2013</td> -->
                       </tr>
-                      <tr>
-                        <td>Length of stay</td>
-                        <!-- <td>01/24/1988</td> -->
-                      </tr>
-
                          <tr>
-                             <tr>
-                        <td>Gender</td>
-                        <!-- <td>Female</td> -->
-                      </tr>
-                        <tr>
-                        <td>Home Address</td>
-                        <!-- <td>Kathmandu,Nepal</td> -->
-                      </tr>
-                      <tr>
-                        <td>Hoby</td>
-                        <!-- <td><a href="mailto:info@support.com">info@support.com</a></td> -->
-                      </tr>
-                        <td>Phone Number</td>
+                        <td>Email contact:</td>
                         <!-- <td>123-4567-890(Landline)<br><br>555-4567-890(Mobile) -->
                         </td>
 

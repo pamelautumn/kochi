@@ -85,7 +85,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           <p>1. Question 1</p>
           <p>2. Question 2</p>
           <p>3. Question 3</p>
-
+					<p><a href="#">quiz.pdf</a>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
