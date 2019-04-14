@@ -65,3 +65,16 @@ Route::get('/doctor/counseling', function () {
 Route::get('/doctor/profile', function () {
   return view('doctor/profile');
 });
+Route::get('/quiz/quiz4', function() {
+  return view('quiz/quiz4');
+});
+Route::get('/quiz/quiz12', function() {
+  return view('quiz/quiz12');
+});
+Route::get('/quiz/grade', function() {
+  return view('quiz/grade.php');
+});
+
+// Route::get('/login', function () {
+//   return view('login/login');
+// });

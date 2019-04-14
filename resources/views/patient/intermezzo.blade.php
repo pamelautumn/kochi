@@ -20,6 +20,54 @@
 
 <script type="text/javascript" src="{{ URL::asset('js/jquery-2.1.4.min.js') }}"></script>
 
+<!--  nasi goreng -->
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+  <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  var isFirstOpen = false;
+  var setDestroy = false;
+  var currentGame = 0;
+  var gamePath = [
+    "<iframe src='{{URL::to('http://localhost/kochi/game/chapter6/index.html')}}' width='100%' height='100%' ></iframe>",
+    "<iframe src='{{URL::to('http://localhost/kochi/game/quiz/index.html')}}' width='100%' height='100%' ></iframe>",
+    "<embed src='{{URL::to('http://localhost/kochi/game/chapter12/index.html')}}' width='100%' height='100%'>",
+    "<embed src='{{URL::to('http://localhost/kochi/game/chapter3/index.html')}}' width='100%' height='100%'>"
+
+  ];
+
+    $(function () {
+      $( "#dialog" ).dialog({
+        autoOpen: true,
+        width: 800,
+        height: 600,
+        open: function(event, ui){
+          if (!isFirstOpen) {
+            setTimeout("$('#dialog').dialog('close')", 1);
+            isFirstOpen = true;
+          } else {
+            var targetGamePath = gamePath[currentGame];
+            $(this).html(targetGamePath);
+          }
+        },
+        close: function (event, ui) {
+          $(this).html("");
+        }
+      });
+    });
+  var showDialog = function () {
+    $( function() {
+      $( "#dialog" ).dialog("open");
+    } );
+  }
+
+  </script>
+
+<!--  ======================-->
+
+
 <!-- //js -->
 <link href='//fonts.googleapis.com/css?family=Capriola' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
@@ -32,9 +80,57 @@
 			event.preventDefault();
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 		});
+
 	});
+  // popup examples
+  $( document ).on( "pagecreate", function() {
+      // The window width and height are decreased by 30 to take the tolerance of 15 pixels at each side into account
+      function scale( width, height, padding, border ) {
+          var scrWidth = $( window ).width() - 30,
+              scrHeight = $( window ).height() - 30,
+              ifrPadding = 2 * padding,
+              ifrBorder = 2 * border,
+              ifrWidth = width + ifrPadding + ifrBorder,
+              ifrHeight = height + ifrPadding + ifrBorder,
+              h, w;
+          if ( ifrWidth < scrWidth && ifrHeight < scrHeight ) {
+              w = ifrWidth;
+              h = ifrHeight;
+          } else if ( ( ifrWidth / scrWidth ) > ( ifrHeight / scrHeight ) ) {
+              w = scrWidth;
+              h = ( scrWidth / ifrWidth ) * ifrHeight;
+          } else {
+              h = scrHeight;
+              w = ( scrHeight / ifrHeight ) * ifrWidth;
+          }
+          return {
+              'width': w - ( ifrPadding + ifrBorder ),
+              'height': h - ( ifrPadding + ifrBorder )
+          };
+      };
+      $( ".ui-popup iframe" )
+          .attr( "width", 0 )
+          .attr( "height", "auto" );
+      $( "#popupVideo" ).on({
+          popupbeforeposition: function() {
+              // call our custom function scale() to get the width and height
+              var size = scale( 497, 298, 15, 1 ),
+                  w = size.width,
+                  h = size.height;
+              $( "#popupVideo iframe" )
+                  .attr( "width", w )
+                  .attr( "height", h );
+          },
+          popupafterclose: function() {
+              $( "#popupVideo iframe" )
+                  .attr( "width", 0 )
+                  .attr( "height", 0 );
+          }
+      });
+  });
+
 </script>
-<!-- start-smoth-scrolling -->
+
 </head>
 
 <body>
@@ -76,16 +172,92 @@
 <!-- banner-bottom -->
 	<div id="about" class="banner-bottom">
 		<div class="container">
-			<h2 align="center">Intermezzo </h3>
+			<h2 align="center">List of Games </h3>
 			<div class="agileits_banner_bottom_grids">
-				<div class="col-md-12 agileits_banner_bottom_grid_l">
-					<h4>Intermezzo</h4>
-					<p><i>List of the Educational Game  </i></p>
-          <p><a href="http://www.abcya.com/adding_fractions.htm">Game 1: Adding Fractions</a></p>
-          <p><a href="http://www.abcya.com/fraction_fling.htm">Game 2: Fraction Fling</i></p>
-          <p><a href="http://www.abcya.com/math_man.htm">Game 3: Math Man</a></p>
-          <p><i>List of the Educational Video  </i></p>
-					<p><a href="#">Video 1</a>
+        <div class="col-md-6 agileits_banner_bottom_grid_l">
+          <h4>教育ゲームのリスト（オフライン）</h4>
+          <p>
+            <a href="#" onclick="currentGame =; showDialog(); ">第1章</a>
+          </p>
+          <p>
+            <a href="#" onclick="currentGame =; showDialog(); ">第2章</a>
+          </p>
+          <p>
+            <a href="#" onclick="currentGame =3; showDialog(); ">第3章</a>
+          </p>
+          <p>
+            <a href="#" onclick="currentGame =; showDialog(); ">第4章</a>
+          </p>
+          <p>
+            <a href="#" onclick="currentGame =; showDialog(); ">第5章</a>
+          </p>
+
+          <p>  <a href="#" onclick="currentGame = 0;showDialog(); ">第6章</a>
+          </p>
+          <!-- <p>
+            <a href="#" onclick="currentGame = 1; showDialog(); ">Quiz</a>
+          </p> -->
+          <p>
+            <a href="#" onclick="currentGame =; showDialog(); ">第7章</a>
+          </p>
+          <p>
+            <a href="#" onclick="currentGame =; showDialog(); ">第8章</a>
+          </p>
+          <p>
+            <a href="#" onclick="currentGame =; showDialog(); ">第9章</a>
+          </p>
+          <p>
+            <a href="#" onclick="currentGame =; showDialog(); ">第10章</a>
+          </p>
+          <p>
+            <a href="#" onclick="currentGame =; showDialog(); ">第11章</a>
+          </p>
+
+          <p>
+            <a href="#" onclick="currentGame = 2; showDialog(); ">第12章</a>
+          </p>
+          <p>
+            <a href="#" onclick="currentGame =; showDialog(); ">第13章</a>
+          </p>
+          <p>
+            <a href="#" onclick="currentGame =; showDialog(); ">第14章</a>
+          </p>
+          <p>
+            <a href="#" onclick="currentGame =; showDialog(); ">第15章</a>
+          </p>
+          <p>
+            <a href="#" onclick="currentGame =; showDialog(); ">第16章</a>
+          </p>
+          <p>
+            <a href="#" onclick="currentGame =; showDialog(); ">第17章</a>
+          </p>
+          <p>
+            <a href="#" onclick="currentGame =; showDialog(); ">第18章</a>
+          </p>
+          <div id="dialog" title="Game">
+            <iframe src="{{URL::to('http://localhost/kochi/game/chapter5/index.html')}}" width="100%" height="100%" ></iframe>
+          </div>
+        </div>
+				<div class="col-md-6 agileits_banner_bottom_grid_l">
+					<h4>List of the Educational Games  (Online)</h4>
+					<p><i></i></p>
+          <p><a href="https://www.mathgames.com/skill/6.46-multiply-and-divide-decimals-by-powers-of-ten">Game Chapter 2: Division of Tens and Hundreds</a></p>
+          <p><a href="http://www.abcya.com/measuring_angles.htm">Game Chapter 3: Angles</a></p>
+          <p><a href="http://www.abcya.com/division_drag_race.htm">Game Chapter 4: Division by One-digit Numbers</a></p>
+          <p><a href="https://www.iknowit.com/lessons/d-geometry-quadrilaterals.html">Game Chapter 5: Quadrilaterals</a></p>
+          <p><a href="BELOM CARI">Game Chapter 6: Division by Two-digit Numbers</a></p>
+          <p><a href="https://www.mathgames.com/skill/6.98-interpret-line-graphs">Game Chapter 7: Line Graphs</a></p>
+          <p><a href="http://www.abcya.com/rounding_numbers.htm">Game Chapter 8: Round Numbers</a></p>
+          <p><a href="http://www.memozor.com/other-free-memory-games-online/abacus-games">Game Chapter 9: Japanese Abacus</a></p>
+          <p><a href="">Game Chapter 10: Expresions and Calculations</a></p>
+          <p><a href="https://www.mathgames.com/skill/5.115-area-of-squares-and-rectangles">Game Chapter 11: Area</a></p>
+          <p><a href="https://www.mathgames.com/skill/6.39-add-and-subtract-decimal-numbers-up-to-3-places">Game Chapter 12: Decimal Numbers</a></p>
+          <p><a href="">Game Chapter 13: Thinking About How to Calculate</a></p>
+          <p><a href="">Game Chapter 14: Arrangement of Data</a></p>
+          <p><a href="https://www.mathgames.com/skill/6.44-divide-decimals-by-whole-numbers">Game Chapter 15: Multiplication and Division of Decimal Numbers</a></p>
+          <p><a href="https://www.mathgames.com/skill/7.64-add-and-subtract-fractions">Game Chapter 16: Fractions</a></p>
+          <p><a href="">Game Chapter 17: Rectangular Prisms and Cubes</a></p>
+          <p><a href="">Game Chapter 18: Quantities Change Together</a></p>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
@@ -110,6 +282,18 @@
 			$().UItoTop({ easingType: 'easeOutQuart' });
 
 			});
+
+//       $(window).load(function () {
+//     $(".trigger_popup_fricc").click(function(){
+//        $('.hover_bkgr_fricc').show();
+//     });
+//     $('.hover_bkgr_fricc').click(function(){
+//         $('.hover_bkgr_fricc').hide();
+//     });
+//     $('.popupCloseButton').click(function(){
+//         $('.hover_bkgr_fricc').hide();
+//     });
+// });
 	</script>
 <!-- //here ends scrolling icon -->
 </body>

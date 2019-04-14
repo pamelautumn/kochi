@@ -66,11 +66,11 @@
 <!-- banner-bottom -->
 	<div id="about" class="banner-bottom">
 		<div class="container">
-			<h2 align="center">Material  </h3>
+			<h2 align="center"><b>マテリアル - チェックリスト</b></h3>
 			<div class="agileits_banner_bottom_grids">
-				<div class="col-md-12 agileits_banner_bottom_grid_l">
-					<h4>MATHEMATICS</h4>
-					<p><i>Chapter 1: "Let's search the Number!" </i></p>
+				<div class="col-md-6 agileits_banner_bottom_grid_l">
+					<h4>一学期</h4>
+					<p><i>第1章：「大きな数」 </i></p>
           <!-- <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="chapter1">More</button> -->
           <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#chapter1" aria-expanded="false" aria-controls="chapter1">
             More
@@ -78,115 +78,297 @@
           <div id="chapter1" class="collapse">
               <form>
                 <div class="checkbox">
-                  <label><input type="checkbox" value="" checked>Large Number of Works</label>
+                  <label><input type="checkbox" value="">大きな数</label>
                 </div>
                 <div class="checkbox">
-                  <label><input type="checkbox" value="">Number</label>
+                  <label><input type="checkbox" value="">数を表すしくみ</label>
                 </div>
-                <div class="checkbox disabled">
-                  <label><input type="checkbox" value="" disabled>Sub-chapter 3</label>
+                <div class="checkbox">
+                  <label><input type="checkbox" value="">大きな数の計算</label>
                 </div>
               </form>
           </div>
 
-            <p><i>Chapter 2: "Let's search the round shape!" </i></p>
+            <p><i>第2章：「わり算」 </i></p>
             <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#chapter2">More</button>
             <div id="chapter2" class="collapse">
                 <form>
                   <div class="checkbox">
-                    <label><input type="checkbox" value="" checked>Circle</label>
+                    <label><input type="checkbox" value="">わり算のルール</label>
                   </div>
                   <div class="checkbox">
-                    <label><input type="checkbox" value="">Sphere</label>
+                    <label><input type="checkbox" value="">何十、何百のわり算</label>
                   </div>
                 </form>
               </div>
 
-              <p><i>Chapter 3: "Let's think how to solve a division!" </i></p>
-              <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#chapter3">More</button>
-              <div id="chapter3" class="collapse">
-                  <form>
-                    <div class="checkbox">
-                      <label><input type="checkbox" value="" checked>How to divide 2 digit or 3 digit number</label>
-                    </div>
-                    <div class="checkbox">
-                      <label><input type="checkbox" value="">Calculation with figures for division</label>
-                    </div>
-                    <div class="checkbox">
-                      <label><input type="checkbox" value="">Calculation with figures for division (2)</label>
-                    </div>
-                    <div class="checkbox">
-                      <label><input type="checkbox" value="">Calculation for multiple</label>
-                    </div>
-                    <div class="checkbox">
-                      <label><input type="checkbox" value="">Mental arithmetic</label>
-                    </div>
-                  </form>
-                </div>
-
-                <p><i>Chapter 4: Line Graph </i></p>
-                <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#chapter4">More</button>
-                <div id="chapter4" class="collapse">
+                <p><i>第3章：「角」</i></p>
+                <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#chapter3">More</button>
+                <div id="chapter3" class="collapse">
                     <form>
                       <div class="checkbox">
-                        <label><input type="checkbox" value="" checked>Let's show how the line graph changes</label>
+                        <label><input type="checkbox" value="">角とその大きさ</label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" value="">三角定規の角度</label>
                       </div>
                     </form>
                   </div>
 
-                  <p><i>Chapter 5: "Let's organize the records easily!" </i></p>
-                  <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#chapter5">More</button>
-                  <div id="chapter5" class="collapse">
+                  <p><i>第4章：「わる数が１けたのわり算」 </i></p>
+                  <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#chapter4">More</button>
+                  <div id="chapter4" class="collapse">
                       <form>
                         <div class="checkbox">
-                          <label><input type="checkbox" value="" checked>Let's organize the records for easy viewing</label>
+                          <label><input type="checkbox" value="" checked>わり算の筆算</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox" value="" checked>2ケタの商によるわり算</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox" value="" checked>（3ケタの数字÷1ケタの数)の計算</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox" value="" checked>表現の種類（※２）</label>
                         </div>
                       </form>
                     </div>
 
-                    <p><i>Chapter 6: "How to express a fraction/decimal" </i></p>
-                    <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#chapter6">More</button>
-                    <div id="chapter6" class="collapse">
+                    <p><i>第5章：「四角形」 </i></p>
+                    <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#chapter5">More</button>
+                    <div id="chapter5" class="collapse">
                         <form>
                           <div class="checkbox">
-                            <label><input type="checkbox" value="" checked>How to express a fraction</label>
+                            <label><input type="checkbox" value="">直線の交わり方</label>
                           </div>
                           <div class="checkbox">
-                            <label><input type="checkbox" value="" checked>The mechanism of fraction</label>
+                            <label><input type="checkbox" value="">直線のならび方</label>
                           </div>
                           <div class="checkbox">
-                            <label><input type="checkbox" value="" checked>The sum and the substraction of decimal</label>
+                            <label><input type="checkbox" value="">様々な四角形</label>
+                          </div>
+                          <div class="checkbox">
+                            <label><input type="checkbox" value="">四角形の対角線</label>
+                          </div>
+                          <div class="checkbox">
+                            <label><input type="checkbox" value="">すきまなくしきつめるパターン</label>
                           </div>
                         </form>
                       </div>
 
-                      <p><i>Chapter 7: "Let's investigate the diagram related triangle" </i></p>
-                      <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#chapter7">More</button>
-                      <div id="chapter7" class="collapse">
+                      <p><i>第6章：「わる数が2けたのわり算」 </i></p>
+                      <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#chapter6">More</button>
+                      <div id="chapter6" class="collapse">
                           <form>
                             <div class="checkbox">
-                              <label><input type="checkbox" value="" checked>Isosceles triangle and equilateral triangle</label>
+                              <label><input type="checkbox" value="">2ケタの数字によるわり算(1)</label>
                             </div>
                             <div class="checkbox">
-                              <label><input type="checkbox" value="" checked>Triangle and angle</label>
+                              <label><input type="checkbox" value="">2ケタの数字によるわり算(2)</label>
+                            </div>
+                            <div class="checkbox">
+                              <label><input type="checkbox" value="">わり算とかけ算のきまり</label>
                             </div>
                           </form>
                         </div>
 
-                        <p><i>Chapter 8: "Let's consider how to express divided number" </i></p>
-                        <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#chapter8">More</button>
-                        <div id="chapter8" class="collapse">
+                        <p><i>第7章：「折れ線グラフ」 </i></p>
+                        <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#chapter7">More</button>
+                        <div id="chapter7" class="collapse">
                             <form>
                               <div class="checkbox">
-                                <label><input type="checkbox" value="" checked>The way of expressing a fraction</label>
+                                <label><input type="checkbox" value="">折れ線グラフ</label>
                               </div>
                               <div class="checkbox">
-                                <label><input type="checkbox" value="" checked>The way of expressing a fraction (2)</label>
+                                <label><input type="checkbox" value="">折れ線グラフの描き方</label>
+                              </div>
+                              <div class="checkbox">
+                                <label><input type="checkbox" value="">折れ線グラフのアイデア</label>
                               </div>
                             </form>
                           </div>
-					<p><a href="#">Materi.pdf</a>
+
+                          <p><i>第8章：「がい数」 </i></p>
+                          <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#chapter8">More</button>
+                          <div id="chapter8" class="collapse">
+                              <form>
+                                <div class="checkbox">
+                                  <label><input type="checkbox" value="">丸め</label>
+                                </div>
+                                <div class="checkbox">
+                                  <label><input type="checkbox" value="">切り上げと切り捨て</label>
+                                </div>
+                                <div class="checkbox">
+                                  <label><input type="checkbox" value="">がい数を使った計算</label>
+                                </div>
+                              </form>
+                            </div>
+
+                            <p><i>第9章「そろばん」 </i></p>
+                            <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#chapter9">More</button>
+                            <div id="chapter9" class="collapse">
+                                <form>
+                                  <div class="checkbox">
+                                    <label><input type="checkbox" value="">そろばんでの数字の表現</label>
+                                  </div>
+                                  <div class="checkbox">
+                                    <label><input type="checkbox" value="">足し算と引き算</label>
+                                  </div>
+                                </form>
+                              </div>
 				</div>
+
+        <div class="col-md-6 agileits_banner_bottom_grid_l">
+          <h4>二学期</h4>
+          <p><i>第10章「式と計算」 </i></p>
+          <!-- <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="chapter1">More</button> -->
+          <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#chapter10" aria-expanded="false" aria-controls="chapter1">
+            More
+          </button>
+          <div id="chapter10" class="collapse">
+              <form>
+                <div class="checkbox">
+                  <label><input type="checkbox" value="">計算の表し方</label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" value="">式と計算のじゅんじょ</label>
+                </div>
+                <div class="checkbox disabled">
+                  <label><input type="checkbox" value="">整数の計算</label>
+                </div>
+              </form>
+          </div>
+
+          <p><i>第11章：「面積」 </i></p>
+          <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#chapter11">More</button>
+          <div id="chapter11" class="collapse">
+              <form>
+                <div class="checkbox">
+                  <label><input type="checkbox" value="">面積</label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" value="">長方形と正方形の面積</label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" value="">大きな面積の単位</label>
+                </div>
+              </form>
+            </div>
+
+            <p><i>第12章「小数」 </i></p>
+            <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#chapter12">More</button>
+            <div id="chapter12" class="collapse">
+                <form>
+                  <div class="checkbox">小数点を表す方法</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="" checked>小数のしくみ</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="" checked>小数のたし算とひき算</label>
+                  </div>
+                </form>
+              </div>
+
+                <p><i>第13章「計算方法の考え方」 </i></p>
+                <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#chapter13">More</button>
+                <div id="chapter13" class="collapse">
+                    <form>
+                      <div class="checkbox">
+                        <label><input type="checkbox" value="">10進数 x 整数</label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" value="">10進数 ÷ 整数</label>
+                      </div>
+                    </form>
+                  </div>
+
+                  <p><i>第14章：「整理のしかた」 </i></p>
+                  <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#chapter14">More</button>
+                  <div id="chapter14" class="collapse">
+                      <form>
+                        <div class="checkbox">
+                          <label><input type="checkbox" value="">テーブルの配置</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox" value="">データの配置</label>
+                        </div>
+                      </form>
+                    </div>
+
+                    <p><i>第15章「小数のかけ算とわり算」 </i></p>
+                    <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#chapter15">More</button>
+                    <div id="chapter15" class="collapse">
+                        <form>
+                          <div class="checkbox">
+                            <label><input type="checkbox" value="">小数×整数の計算</label>
+                          </div>
+                          <div class="checkbox">
+                            <label><input type="checkbox" value="">小数÷整数の計算</label>
+                          </div>
+                          <div class="checkbox">
+                            <label><input type="checkbox" value="">わり算問題</label>
+                          </div>
+                          <div class="checkbox">
+                            <label><input type="checkbox" value="">表現の種類</label>
+                          </div>
+                        </form>
+                      </div>
+
+                      <p><i>第16章：「分数」 </i></p>
+                      <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#chapter16">More</button>
+                      <div id="chapter16" class="collapse">
+                          <form>
+                            <div class="checkbox">
+                              <label><input type="checkbox" value="">1より大きい分数</label>
+                            </div>
+                            <div class="checkbox">
+                              <label><input type="checkbox" value="">大きさの等しい分数</label>
+                            </div>
+                            <div class="checkbox">
+                              <label><input type="checkbox" value="">分数のたし算とひき算</label>
+                            </div>
+                          </form>
+                        </div>
+
+                        <p><i>第17章「直方体と立方体」 </i></p>
+                        <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#chapter17">More</button>
+                        <div id="chapter17" class="collapse">
+                            <form>
+                              <div class="checkbox">
+                                <label><input type="checkbox" value="">直方体と立方体</label>
+                              </div>
+                              <div class="checkbox">
+                                <label><input type="checkbox" value="">展開図</label>
+                              </div>
+                              <div class="checkbox">
+                                <label><input type="checkbox" value="">面や辺の垂直・平行</label>
+                              </div>
+                              <div class="checkbox">
+                                <label><input type="checkbox" value="">位置を表す方法</label>
+                              </div>
+                            </form>
+                          </div>
+
+                          <p><i>第18章：「同時に変わる量」</i></p>
+                          <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#chapter18">More</button>
+                          <div id="chapter18" class="collapse">
+                              <form>
+                                <div class="checkbox">
+                                  <label><input type="checkbox" value="">同時に変わる量</label>
+                                </div>
+                                <div class="checkbox">
+                                  <label><input type="checkbox" value="">□と○を用いた算数文 </label>
+                                </div>
+                                <div class="checkbox">
+                                  <label><input type="checkbox" value="">ラウンド見積もり</label>
+                                </div>
+                              </form>
+                            </div><br><br>
+                            <button type="button" class="btn btn-success pull-right" data-toggle="collapse" data-target="#">Update</button>
+
+        </div>
+
 				<div class="clearfix"> </div>
 			</div>
 		</div>

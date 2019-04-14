@@ -77,15 +77,33 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- banner-bottom -->
 	<div id="about" class="banner-bottom">
 		<div class="container">
-			<h2 align="center">Quiz/Test  </h3>
+			<h2 align="center">Quiz</h3>
 			<div class="agileits_banner_bottom_grids">
-				<div class="col-md-12 agileits_banner_bottom_grid_l">
-					<h4>Quiz</h4>
-					<p><i>List of the Quiz  </i></p>
-          <p>1. Question 1</p>
-          <p>2. Question 2</p>
-          <p>3. Question 3</p>
-					<p><a href="#">quiz.pdf</a>
+				<div class="col-md-8 agileits_banner_bottom_grid_l">
+					<h4>最初の学期</h4>
+					<!-- <p><i>List of the Quiz  </i></p> -->
+					<p><a href="/quiz/quiz1">第1章のクイズ</a></p>
+					<p><a href="/quiz/quiz2">第2章のクイズ</a></p>
+					<p><a href="/quiz/quiz3">第3章のクイズ</a></p>
+					<p><a href="/quiz/quiz4">第4章のクイズ</a></p>
+					<p><a href="/quiz/quiz5">第5章のクイズ</a></p>
+					<p><a href="/quiz/quiz6">第6章のクイズ</a></p>
+					<p><a href="/quiz/quiz7">第7章のクイズ</a></p>
+					<p><a href="/quiz/quiz8">第8章のクイズ</a></p>
+					<p><a href="/quiz/quiz9">第9章のクイズ</a></p>
+				</div>
+				<div class="col-md-4 agileits_banner_bottom_grid_l">
+					<h4>二学期</h4>
+					<!-- <p><i>List of the Quiz  </i></p> -->
+					<p><a href="/quiz/quiz10">第10章のクイズ</a></p>
+					<p><a href="/quiz/quiz11">第11章のクイズ</a></p>
+					<p><a href="/quiz/quiz12">第12章のクイズ</a></p>
+					<p><a href="/quiz/quiz13">第13章のクイズ</a></p>
+					<p><a href="/quiz/quiz14">第14章のクイズ</a></p>
+					<p><a href="/quiz/quiz15">第15章のクイズ</a></p>
+					<p><a href="/quiz/quiz16">第16章のクイズ</a></p>
+					<p><a href="/quiz/quiz17">第17章のクイズ</a></p>
+					<p><a href="/quiz/quiz18">第18章のクイズ</a></p>
 				</div>
 				<div class="clearfix"> </div>
 			</div>

@@ -79,7 +79,7 @@
 	<div id="about" class="banner-bottom">
 		<div class="container">
 			<h2 align="center">Material  </h3> <br> <br><br>
-				<div class="col-md-3"> Your progress
+				<!-- <div class="col-md-3"> Your progress
 				</div> <br> <br>
 
 			<div class="progress">
@@ -87,23 +87,23 @@
 			  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
 			    40%
 			  </div>
-			</div>
+			</div> -->
 
 			<div class="agileits_banner_bottom_grids">
 				<div class="col-md-4 agileits_banner_bottom_grid_l">
-					<h4>Material</h4>
-					<p><i>This contain the material of study  </i></p>
-					<p><a href="/child/material/more">More</a>
+					<h4>材料のインデックス</h4>
+					<p><i>この部分には、研究材料のインデックスのみが含まれています。 残りの資料は物理的な本で見つけることができます。 </i></p>
+					<p><a href="/child/material/more">続きを見る</a>
 				</div>
 				<div class="col-md-4 agileits_banner_bottom_grid_l">
-					<h4>Quiz/Test</h4>
-					<p><i>This contain quiz/test yet it also contain a material</i></p>
-					<p><a href="/child/material/quiz">More</a>
+					<h4>クイズ</h4>
+					<p><i>この部分には、その資料のクイズが含まれています。 すべてのクイズは複数の選択肢です。 </i></p>
+					<p><a href="/child/material/quiz">続きを見る</a>
 				</div>
 				<div class="col-md-4 agileits_banner_bottom_grid_l">
-					<h4>Intermezzo</h4>
-					<p><i>This contain intermezzo (video, games etc) yet it also contain a material</i></p>
-					<p><a href="/child/material/intermezzo">More</a>
+					<h4>ゲーム</h4>
+					<p><i>この部分には教育ゲームが含まれています。 もっと遊んでもっと学びましょう！</i></p>
+					<p><a href="/child/material/intermezzo">続きを見る</a>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
